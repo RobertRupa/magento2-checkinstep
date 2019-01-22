@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <checkinstep>
+            <general>
+                <enable>1</enable>
+                <title><![CDATA[Don't have an account]]></title>
+                <content><![CDATA[<h4 class="title">Dlaczego warto mieć konto?</h4>
+<ul class="info-list">
+<li><span>Szybciej zrobisz zakupy</span></li>
+<li><span>Masz dostęp do historii zakupów</span></li>
+<li><span>Dodajesz produkty do listy zakupowej</span></li>
+<li><span>Korzystasz z innych przywilejów (zniżki, tańsze zakupy)</span></li>
+</ul>]]></content>
+            </general>
+        </checkinstep>
+    </default>
+</config>

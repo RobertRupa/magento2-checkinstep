@@ -1,0 +1,129 @@
+.log-in {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 80px 0px 80px;
+    clear: both;
+    content: " ";
+    display: flex;
+}
+.log-in .box {
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 1;
+    display: flex;
+}
+.log-in .box .inner{
+            background-color: #f7f7f7;
+            border: 1px solid #dadada;
+            max-width: 475px;
+            margin: 0px 0 0px auto;
+            flex: 1;
+}
+.log-in .inner.register {
+                background-color: #ffffff;
+                margin: 0px auto 0px;
+            }
+            .log-in .block-title{
+    display: none;
+}
+.log-in .field.note{
+    display: none;
+}
+               
+
+.log-in h3{
+    font-family: 'RobotoCondensed';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #414141;
+    margin: 0;
+    padding: 37px 0 49px 0;
+}
+.log-in fieldset{
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.log-in .box .inner .conntent form fieldset,
+   .log-in .social-login-authentication-channel.account-social-login,
+    .log-in .block-content,
+    .log-in .inner-fix,
+    .log-in .inner.register
+    {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .log-in .social-login-authentication-channel.account-social-login{
+        margin-bottom: 49px;
+    }
+    .log-in .box .inner .conntent form fieldset.login .actions-toolbar .primary{
+        display: block;
+    }
+    .log-in .box .inner .conntent form fieldset.login .actions-toolbar .primary,
+    .log-in .box .inner .conntent form fieldset.login .actions-toolbar .primary button,
+    .log-in .box .inner .conntent form fieldset.login .actions-toolbar .secondary,
+    .log-in .action.primary.checkout,
+    .log-in .action.create.primary{
+        width: 100%
+    }
+    .box .inner .conntent form fieldset.login .actions-toolbar .secondary{
+        text-align: right;
+    }
+    .log-in .actions-toolbar.social-btn.social-btn-actions-toolbar{
+        width: 100%;
+    }
+    .log-in .social-btn .btn-social {
+        background-color: transparent;
+        color: #000;
+        border: 1px solid #000;
+        border-radius: 0px;
+        text-align: center;
+    }
+    .log-in .social-btn .btn-social span{
+        color: #3f5d9b;
+    }
+    
+    .log-in .social-btn .btn-social.btn-facebook:hover,
+    .log-in .social-btn .btn-social.btn-facebook:active,
+    .log-in .social-btn .btn-social.btn-facebook:focus {
+        background-color: #3f5d9b;
+        color: #fff;
+        border: 1px solid #3f5d9b;
+        border-radius: 0px;
+        text-align: center;
+    }
+    
+    .log-in .social-btn .btn-social:hover span,
+    .log-in .social-btn .btn-social:active span,
+    .log-in .social-btn .btn-social:focus span{
+        color: #fff;
+    }
+    .log-in .social-btn .btn-social.btn-google:hover,
+    .log-in .social-btn .btn-social.btn-google:active,
+    .log-in .social-btn .btn-social.btn-google:focus {
+        background-color: #c23321;
+        color: #fff;
+        border: 1px solid #c23321;
+        border-radius: 0px;
+        text-align: center;
+    }
+    .column.main .block.social-login-authentication-channel{
+        margin-bottom: 50px;
+    }
+    .log-in .toolbar .or {
+        padding: 10px 0px;
+    }
+    
+    
+    
+    button.action.continue.primary{
+        display: none;
+    }
