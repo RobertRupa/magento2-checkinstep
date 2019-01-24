@@ -1,10 +1,10 @@
 <?php
 
-namespace Konatsu\CheckInStep\Block\Login;
+namespace Konatsu\LogInStep\Block\Login;
 
 use Magento\Customer\Block\Form\Login as OrginalLogin;
 use Mageplaza\SocialLogin\Block\Popup\Social;
-use Konatsu\CheckInStep\Model\Advice;
+use Konatsu\LogInStep\Model\Advice;
  
 class Login extends \Magento\Framework\View\Element\Template
 {
@@ -22,7 +22,7 @@ class Login extends \Magento\Framework\View\Element\Template
      */
     private $advice;
 
-    protected const CONFIG_PATH = "checkinstep/general";
+    protected const CONFIG_PATH = "loginstep/general";
 
     /**
      * Data constructor.
@@ -43,7 +43,7 @@ class Login extends \Magento\Framework\View\Element\Template
     
     public function getStoreCode()
     {
-        return '';
+        return $this->_storeManager->getStore()->getCode();;
     }
 
     public function getAdvice()
@@ -62,6 +62,5 @@ class Login extends \Magento\Framework\View\Element\Template
     {
         return $this->filterProvider->getPageFilter()->filter($string);
     }
-
 
 }

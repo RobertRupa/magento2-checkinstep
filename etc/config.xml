@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <checkinstep>
+        <loginstep>
             <general>
                 <enable>1</enable>
                 <title><![CDATA[Don't have an account]]></title>
@@ -13,6 +13,6 @@
 <li><span>Korzystasz z innych przywilejów (zniżki, tańsze zakupy)</span></li>
 </ul>]]></content>
             </general>
-        </checkinstep>
+        </loginstep>
     </default>
 </config>

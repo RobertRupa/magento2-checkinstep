@@ -1,17 +1,12 @@
 <?php
  
-namespace Konatsu\CheckInStep\Model;
+namespace Konatsu\LogInStep\Model;
 
 
 class Advice
 {
-
-    /**
-     * @var PageFactory
-     */
     private $title;
     private $content;
-
  
     public function setTitle($title)
     {

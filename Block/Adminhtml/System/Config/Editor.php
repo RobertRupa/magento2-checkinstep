@@ -6,7 +6,7 @@
  * @author Robert Rupa <office@konatsu.pl>
  * @license OSL-3.0, AFL-3.0
  */
-namespace Konatsu\CheckInStep\Block\Adminhtml\System\Config;
+namespace Konatsu\LogInStep\Block\Adminhtml\System\Config;
 use Magento\Framework\Registry;
 use Magento\Backend\Block\Template\Context;
 use Magento\Cms\Model\Wysiwyg\Config as WysiwygConfig;

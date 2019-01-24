@@ -51,11 +51,13 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+
+#customer-email-fieldset .fieldset.hidden-fields{
+    padding: 0px;
+}
 .log-in .box .inner .conntent form fieldset,
    .log-in .social-login-authentication-channel.account-social-login,
-    .log-in .block-content,
-    .log-in .inner-fix,
-    .log-in .inner.register
+    .log-in .inner-fix
     {
         max-width: 400px;
         margin: 0 auto;
@@ -73,6 +75,13 @@
     .log-in .action.primary.checkout,
     .log-in .action.create.primary{
         width: 100%
+    }
+    .log-in .box .actions-toolbar .primary,
+    .action.remind{
+        float: right;
+    }
+    .log-in .box .actions-toolbar .primary button{
+        margin: 0px;
     }
     .box .inner .conntent form fieldset.login .actions-toolbar .secondary{
         text-align: right;
@@ -122,8 +131,53 @@
         padding: 10px 0px;
     }
     
-    
-    
-    button.action.continue.primary{
+    aside{
         display: none;
     }
+    #checkout .opc-wrapper{
+        width: 100%;
+        padding: 0px;
+    }
+    button.action.continue.primary{
+        /* display: none; */
+    }
+
+.inner.register > .inner-fix {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 54px;
+    padding: 0px 30px;
+}
+
+@media only screen and (max-width: 767px){
+    .log-in{
+        display: block;
+        padding: 10px 0px 0px;
+    }
+    .log-in .box{
+        width: 100%;
+        display: block;
+        padding: 0;
+     }
+    .log-in .box.login{
+        margin-bottom: 30px;
+    }
+    .log-in .box .inner,
+    .log-in .box .inner .conntent form fieldset,
+    .log-in .social-login-authentication-channel.account-social-login,
+    .log-in .block-content,
+    .log-in .inner-fix,
+    .log-in .inner.register{
+        max-width: 100%;
+    }
+    .inner.register > .inner-fix{
+        padding: 0px;
+        position: relative;
+
+    }
+    .log-in .conntent {
+        margin-bottom: 30px;
+    }
+}

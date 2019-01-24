@@ -1,0 +1,67 @@
+<li id="email" data-bind="fadeVisible: isVisible">
+    <div class="log-in">
+        <div class="box login">
+            <div class="inner login">
+                <div class="title">
+                    <h3 data-bind="i18n: 'Already have an account'"></h3>
+                </div>
+                <div class="conntent">
+                    <each args="getRegion('login-methods')" render="" />
+                    <div class="block social-login-authentication-channel account-social-login">
+                        <div class="block-content" data-bind="foreach: socials()">
+                            <div class="actions-toolbar social-btn social-btn-actions-toolbar" data-bind="css: key + '-login'">
+                                <a class="btn btn-block btn-social"
+                                    data-bind="css: 'btn-' + btn_key, socialButton: $parent.isActive, url: url, label: label">
+                                    <span class="fa" data-bind="css: 'fa-' + btn_key"></span>
+                                    <!-- ko text: full_label--><!-- /ko -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box register">
+            <div class="inner register">
+                <div class="title">
+                    <h3 data-bind="text: getAdviceTitle()"></h3>
+                </div>
+                <div class="conntent">
+                    <div class="inner-fix">
+                        <div data-bind="html: getAdviceContent()"></div>
+                    </div>
+                </div>
+                <div class="inner-fix">
+                        <div class="toolbar">
+                            <div class="primary">
+                                <a data-bind="attr: { href: createAccountUrl() }" class="action create primary">
+                                    <span><!-- ko i18n: 'Create an Account'--><!-- /ko --></span>
+                                </a>
+                            </div>
+                            <div class="or">
+                                <span class="label"><!-- ko i18n: 'or continue as a guest'--><!-- /ko --></span>
+                            </div>
+                            <div class="go-to-checkout">
+                            <form data-bind="submit: navigateToNextStep" class="form-next-step" novalidate="novalidate">
+                                <div class="primary">
+                                        <button data-role="opc-continue" type="submit"  class="action primary checkout">
+                                            <span class="label"><!-- ko i18n: 'Buy without registration'--><!-- /ko --></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form data-bind="submit: navigateToNextStep" class="form-next-step" novalidate="novalidate">
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button data-role="opc-continue" type="submit" class="button action continue primary">
+                    <span><!-- ko i18n: 'Next'--><!-- /ko --></span>
+                </button>
+            </div>
+        </div>
+    </form>
+</li>

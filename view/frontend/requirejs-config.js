@@ -7,19 +7,18 @@ var config = {
     'config': {
         'mixins': {
             'Magento_Checkout/js/view/shipping': {
-               'Konatsu_CheckInStep/js/view/shipping-payment-mixin': true
-               },
+               'Konatsu_LogInStep/js/view/shipping-payment-mixin': true
+                },
             'Magento_Checkout/js/view/payment': {
-                'Konatsu_CheckInStep/js/view/shipping-payment-mixin': true
-               }
+                'Konatsu_LogInStep/js/view/shipping-payment-mixin': true
+                },
+            'Magento_Checkout/js/model/step-navigator': {
+               'Konatsu_LogInStep/js/mixin/navigator-mixin': true
+                }
         }
     },
     'map': {
         '*': {
-            //'Magento_Checkout/js/view/shipping' :
-            //   'Konatsu_CheckInStep/js/view/shipping',
-            'Magento_Checkout/js/model/step-navigator' :
-                'Konatsu_CheckInStep/js/model/step-navigator',
         }
     }
 };

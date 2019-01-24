@@ -9,25 +9,25 @@
         <tab id="konatsu" translate="label" sortOrder="10">
             <label>Konatsu</label>
         </tab>
-        <section id="checkinstep" translate="label" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
+        <section id="loginstep" translate="label" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
             <label>Check in step</label>
             <tab>konatsu</tab>
-            <resource>Konatsu_CheckInStep::checkinstep_config</resource>
+            <resource>Konatsu_LogInStep::loginstep</resource>
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Main settings</label>
                 <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Module Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <config_path>checkinstep/general/enable</config_path>
+                    <config_path>loginstep/general/enable</config_path>
                 </field>
                 <field id="title" type="text" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Title</label>
                 </field>
                 <field id="content" translate="conntent" sortOrder="30" type="editor" showInStore="1" showInDefault="1" >
                     <label>Content</label>
-                    <frontend_model>Konatsu\CheckInStep\Block\Adminhtml\System\Config\Editor</frontend_model>
-                    <config_path>checkinstep/general/content</config_path>
+                    <frontend_model>Konatsu\LogInStep\Block\Adminhtml\System\Config\Editor</frontend_model>
+                    <config_path>loginstep/general/content</config_path>
                 </field>
             </group>
         </section>
